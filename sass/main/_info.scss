@@ -1,0 +1,44 @@
+@use './../abstracs/mixins' as *;
+@use './../abstracs/variables' as *;
+
+//Inicio de la información de los clientes
+.info-nuestros__clientes {
+    max-width: 100%;
+    @include flex(flex, streach, center, row, wrap);
+    margin-top: 5%;
+}
+
+// informacion donde se demuestra informacion del clientes
+
+.idea-main {
+    max-width: 33%;
+    text-align: center;
+    img {
+        width: 3rem;
+    }
+    h2, p {
+        margin-top: 2%;
+        font-weight: bolder;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+}
+
+
+//Version movil
+@media screen and (max-width: 600px) {
+    //Inicio de la infromacion de los clientes
+    .info-nuestros__clientes{
+        max-width: 90%;
+        @include flex(flex, center, center, column, wrap);
+        margin:5% auto;
+    }
+
+    //cada una caja de la informacion
+    .idea-main {
+        max-width: 100%;
+        margin-top: 5%;
+    }
+}

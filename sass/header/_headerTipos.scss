@@ -1,0 +1,138 @@
+@use './../abstracs/variables' as *;
+@use './../abstracs/mixins' as *;
+
+//Incio del header
+.header-nav {
+    @include flex(flex, none, center, column, wrap);
+    max-width: 100%;
+}
+
+//Priemra parte del header
+
+.header-logo__contacto {
+    @include flex(flex, center, space-around, row, wrap);
+    background-color: $color-text;
+    padding: 1% 0;
+
+    //Logo
+    .logo {
+        color: $color-1;
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+
+    //Entrega
+    .header-entrega {
+        font-size: .8rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        span {
+            margin-left: 1%;
+        }
+    }
+
+    //Numeros de telefonos
+    .header-contacto {
+        @include flex(flex,center,none,column,wrap);
+        a {
+            display: flex;
+            align-items: center;
+            padding: 3%;
+            font-size: .8rem;
+
+            span {
+                margin-right: 5%;
+            }
+        }
+     }
+}
+
+/***********Segunda parte del header***************/
+
+.header-nav__search {
+    max-width: 100%;
+    @include flex(flex, center, space-around, row, wrap);
+    background-color: $color-1;
+
+    //Menu desplazable personalizaciòn sabores
+    .header-tipos__sabores {
+        min-width:40%;
+        @include flex(flex, center, space-between, row, wrap);
+
+        a {
+            color: $color-text;
+            transition: all 1s;
+            
+            &:hover {
+                color: $color-negro;
+             }
+         }
+
+         .btn-option{
+            color: $color-negro;
+            transition: all 1s;
+            &:hover {
+                color: $color-text;
+
+            }
+         }
+         
+    }
+    
+    
+    
+    //Search y carrito de compras
+
+    .header-search__buy {
+        @include flex(flex, center, space-around, row, nowrap);
+        min-width:40%;
+        margin-right: 7%;
+        //Barra de busqueda
+        .header-search {
+            display: flex;
+            justify-content: space-between;
+            min-width: 90%;
+            input {
+                border: transparent;
+                width: 90%;
+                padding: 1.5% 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+/************ version movil ******************/
+
+@media screen and (max-width: 600px) {
+    //Inicio del header
+
+    //Inicio header contacto logo ubicacion numeros teñ
+    .header-logo__contacto {
+        @include flex(flex, center, none, column, wrap);
+
+        //Entregas 
+        .header-entrega {
+            font-size: .7rem;
+            span {
+                margin: 0;
+            }
+        }
+    }
+    //Segunda parte del header
+
+    .header-tipos__sabores{
+        @include flex(flex, center, none, column, nowrap);
+        a {
+            font-size: .8rem;
+        }
+    }
+}
+

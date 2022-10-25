@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos</title>
+    <link rel="stylesheet" href="css/pagos.css">
+</head>
+<body>
+        <!-- Inicio del header -->
+        <header class="header-nav">
+
+            <!-- Primer parte del header -->
+            <!-- Logo contacto -->
+            <section class="header-logo__contacto">
+    
+                <!-- Logo -->
+                <a href="" class="logo">PASTELERIA</a>
+    
+                <p class="header-entrega">
+                    <span><img src="svg/car.svg" alt=""></span>
+                    Entregas en toda CD NEZA
+                </p>
+    
+                <!-- Numeros de telefonos -->
+                <div class="header-contacto">
+                    <a href="#">
+                        <span><img src="svg/tel.svg" alt="Telefono"></span>5656564374
+                    </a>
+                    <a href="#">
+                        <span><img src="svg/whatsapp.svg" alt="whatsapp"></span>5527632223
+                    </a>
+                </div>
+            </section>
+    
+    
+            <!-- Segunda parte del header -->
+            <!-- Navegacion sabores search carrito  -->
+            <nav class="header-nav__search">
+                <!-- Tipo de pasteles, perzonalizar sabores -->
+                <section class="header-tipos__sabores">
+                    <!-- Menu dezplegable -->
+                    <div class="dropdown">
+                        <button class="btn-option">Tipos de pasteles</button>
+                        <div class="dropdown-div">
+                            <a href="niños.html">Pasteles de niños</a>
+                            <a href="fiestas.html">Pasteles de fiestas</a>
+                            <a href="bodas.html">Pasteles de bodas</a>
+                        </div>
+                    </div>
+    
+                    <!-- Links de otras secciones de la pagina -->
+                    <a href="perzonaliza.html">Personaliza tu pastel</a>
+                </section>
+    
+                <!--  Barra de navegación -->
+                <section class="header-search__buy">
+                    <!-- header search -->
+                    <form action="" class="header-search">
+                        <input type="text" placeholder="Buscar pastel">
+                        <img src="svg/search.svg" alt="">
+                    </form>
+    
+                    <div class="header-carrito">
+                        <img src="svg/buycar.svg" alt="">
+                    </div>
+                </section>
+            </nav>
+        </header>
+
+
+
+
+        <main class="main">
+            
+            <!-- infomacion persona -->
+            <section class="info-personal">
+                <form action="">
+                    <!-- Nombre -->
+                    <label for="">Nombre y Apellidos:</label>
+                    <input type="text" placeholder="Ingrese su nombre y Apellidos">
+
+                    <!-- ETELEFONI-->
+
+                    <label for="">Ingrese numero de telefono</label>
+                    <input type="tel" placeholder="Ingrese numero de telefono">
+
+                    <!-- Correo -->
+                    <label for="">Ingrese correo electronico</label>
+                    <input type="email" placeholder="Ingrese correo electronico">
+
+                    <!-- Nombre de la tarjeta -->
+                    <label for="">Nombre de la tarjeta</label>
+                    <input type="text" placeholder="Nombre">
+
+                    <!-- Fecha de la tarjeta -->
+                    <label for="">Fecha de la tarjeta</label>
+                    <input type="text" placeholder="Fecha">
+
+                    <!-- CVV -->
+                    <label for="">CVV</label>
+                    <input type="text" placeholder="CVV">
+                    
+                    <button class="btn-pago">Comprar ahora</button>
+                </form>
+            </section>
+        </main>
+</body>
+</html>

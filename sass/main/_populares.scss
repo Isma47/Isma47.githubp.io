@@ -1,0 +1,83 @@
+@use './../abstracs/variables' as  *;
+@use './../abstracs/mixins' as *;
+.main {
+    max-width: 100%;
+}
+
+//Seccion 1 pasteles populares
+
+.main-populares {
+
+    .title-populares {
+        margin-top: 5%;
+        color: $color-1;
+        font-size: 2rem;
+    }
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13%, 30%));
+    gap: 1rem;
+    grid-template-areas:
+    "title-populares title-populares title-populares"
+    "pastel-1           pastel-2        pastel-3    "
+    "pastel-4           pastel-5        pastel-6    " ;
+
+    .pastel-1 {
+        grid-area: pastel-1;
+    }
+    .pastel-2{
+        grid-area: pastel-2; 
+    }
+    .pastel-3{
+        grid-area: pastel-3;
+    }
+    .pastel-4{
+        grid-area: pastel-4;  
+    }
+    .pastel-5{
+        grid-area: pastel-5;
+    }
+    .pastel-6{
+        grid-area: pastel-6;  
+    }
+
+    .pastel {
+        img {
+            width: 100%;
+            transition: all 1s;
+            &:hover {
+                transform: scale(1.1, 1.1);
+            }
+        }
+    }
+
+    //Precios y sabores de la seccion de populares
+
+    .info{
+        margin-left: 5%;
+        p {
+            font-size: .9rem;
+            margin-top: 4%;
+        }
+
+        span{
+            font-weight: 800;
+            color: $color-1;
+        }
+
+        li {
+            font-size: .8rem;
+        }
+    }
+}
+
+
+//Version movil
+
+@media screen and (max-width: 600px) {
+    //primera parte de la secciòn
+    .main-populares {
+        @include flex(flex,center, none, column, nowrap);
+    }
+}

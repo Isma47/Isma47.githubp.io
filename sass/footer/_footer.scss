@@ -1,0 +1,35 @@
+@use './../abstracs/mixins' as *;
+@use './../abstracs/variables' as *;
+
+//Inicio del footer
+.footer {
+    background-color: $color-1;
+    margin-top: 1rem;
+    @include flex(flex, streach, none, column, wrap);
+}
+
+.footer-final {
+    max-width: 70%;
+    min-height: 10vh;
+    margin-top: 1%;
+
+    h3, p{
+        margin-top: 1.5%;
+    }
+    h3 {
+        color: $color-text;
+    }
+    p {
+        font-weight: 800;
+    }
+
+    a{
+        font-size: .8rem;
+        color: $color-negro;
+    }
+
+    .ayuda {
+        display: flex;
+        flex-direction: column;
+    }
+}

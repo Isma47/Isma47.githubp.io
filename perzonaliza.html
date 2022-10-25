@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREA TU PASTEL!!</title>
+
+    <link rel="stylesheet" href="css/personaliza.css">
+</head>
+
+<body>
+    <!-- Inicio del header -->
+    <header class="header-nav">
+
+        <!-- Primer parte del header -->
+        <!-- Logo contacto -->
+        <section class="header-logo__contacto">
+
+            <!-- Logo -->
+            <a href="" class="logo">PASTELERIA</a>
+
+            <p class="header-entrega">
+                <span><img src="svg/car.svg" alt=""></span>
+                Entregas en toda CD NEZA
+            </p>
+
+            <!-- Numeros de telefonos -->
+            <div class="header-contacto">
+                <a href="#">
+                    <span><img src="svg/tel.svg" alt="Telefono"></span>5656564374
+                </a>
+                <a href="#">
+                    <span><img src="svg/whatsapp.svg" alt="whatsapp"></span>5527632223
+                </a>
+            </div>
+        </section>
+
+
+        <!-- Segunda parte del header -->
+        <!-- Navegacion sabores search carrito  -->
+        <nav class="header-nav__search">
+            <!-- Tipo de pasteles, perzonalizar sabores -->
+            <section class="header-tipos__sabores">
+                <!-- Menu dezplegable -->
+                <div class="dropdown">
+                    <button class="btn-option">Tipos de pasteles</button>
+                    <div class="dropdown-div">
+                        <a href="niños.html">Pasteles de niños</a>
+                        <a href="fiestas.html">Pasteles de fiestas</a>
+                        <a href="bodas.html">Pasteles de bodas</a>
+                    </div>
+                </div>
+
+                <!-- Links de otras secciones de la pagina -->
+                <a href="perzonaliza.html">Personaliza tu pastel</a>
+            </section>
+
+            <!--  Barra de navegación -->
+            <section class="header-search__buy">
+                <!-- header search -->
+                <form action="" class="header-search">
+                    <input type="text" placeholder="Buscar pastel">
+                    <img src="svg/search.svg" alt="">
+                </form>
+
+                <div class="header-carrito">
+                    <img src="svg/buycar.svg" alt="">
+                </div>
+            </section>
+        </nav>
+    </header>
+
+
+
+
+    <!-- Inicio del main -->
+
+    <main class="main">
+        <!-- Formulario -->
+        <section class="main-formulario">
+            <article class="info-pasteles">
+                <h1>CREA TU PASTEL A TUS GUSTOS Y NECESIDADES</h1>
+
+                <p>Podemos hacer cualquier pastel con el material disponible</p>
+
+                <p>Llena el siguente formulario para poder crear tu pastel</p>
+            </article>
+            <!-- Inicio del formulario -->
+            <form action="">
+                <!-- Elegir pastel, galletas o pai -->
+                <label for="">¿Qué deseas?</label>
+                <select name="pastel-pai" id="">
+                    <option value="pastel">Pastel</option>
+                    <option value="pai">PAI</option>
+                    <option value="galletas">GALLETAS</option>
+                </select>
+
+                <!-- Sabores  -->
+                <label for="">Sabores</label>
+                <select name="sabores" id="">
+                    <option value="chocolate">Chocolate</option>
+                    <option value="fresa">Fresa</option>
+                    <option value="manzana">Manzana</option>
+                    <option value="vegano">Vegano</option>
+                    <option value="caramelo">Caramelo</option>
+                </select>
+
+                <!-- Decoraciones -->
+                <label for="">Decoraciones</label>
+                <select name="" id="">
+                    <option value="">Bela de novios</option>
+                    <option value="">Flores</option>
+                    <option value="">Fotos de pareja</option>
+                    <option value="">Tenedor</option>
+                    <option value="">Mini estante</option>
+                    <option value="">Juguetes</option>
+                    <option value="">Figura de algun personaje</option>
+                </select>
+
+                <!-- Frase que tendra el pastel -->
+
+                <label for="">Frase del pastel</label>
+                <input type="text" placeholder="Coloquela frase">
+
+                <!-- Foto -->
+                <label for="">Ingrese una foto</label>
+                <input type="file">
+
+                <!-- Relleno -->
+                <select name="" id="">
+                    <option value="">Fresa</option>
+                    <option value="">Chocolate</option>
+                    <option value="">Manzana</option>
+                </select>
+                
+                <!-- Descripciòn -->
+
+                <label for="">Ingrese una pequeña descripción</label>
+                <textarea name="" id="" cols="20" rows="5" class="descripcion"></textarea>
+
+                <a href="pago.html">
+                    <button>Realizar el pago</button>
+                </a>
+                
+            </form>
+        </section>
+    </main>
+
+
+        <!-- INICIO DEL FOOTER -->
+
+        <footer class="footer">
+            <!-- Contacto footer -->
+            <article class="footer-contacto footer-final">
+                <h3>CONTACTO</h3>
+                <!-- Telefono fijo -->
+                <p>Telefonos fijo</p>
+                <a href="#">55-32-33-66-44</a>
+                <a href="#">55-32-56-67-23</a>
+                <!-- Whatsapp -->
+                <h3>Whatsapp</h3>
+                <a href="#">55-34-55-34-75</a>
+                <!-- Dirección -->
+                <h3>Dirección</h3>
+                <p>Av. Pantirlan #455. Col Mèxico</p>
+            </article>
+            <!-- Ayuda footer -->
+            <article class=" ayuda footer-final">
+                <h3>AYUDA</h3>
+                <a href="#">Preguntas Frecuentes</a>
+                <a href="#">Terminos y condiciones</a>
+                <a href="#">Politica de reembolso</a>
+                <a href="#">Politica de privacidad</a>
+            </article>
+            <!-- Suscribirse -->
+            <article class="footer-final">
+                <h3>SUSCRIBETE A NUESTRAS NOTICIAS</h3>
+                <form action="">
+                    <input type="text" placeholder="Direcciòn de Email">
+                    <button>SUSCRIBIR</button>
+                </form>
+            </article>
+            <!-- Redes sociales -->
+            <article class="footer-final">
+                <h3>SIGUENOS</h3>
+                <div>
+                    <img src="svg/facebook.svg" alt="">
+                    <img src="svg/whatsapp.svg" alt="">
+                    <img src="svg/insta.svg" alt="">
+                </div>
+            </article>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+//Generales
+@use './generales';
+
+//Header
+@use './header/header';
+
+//Menu desplegable
+
+@use './menu/menu';
+
+//Main
+
+//Pasteles populares
+@use '../sass/main/populares';
+
+//Crear tu pastel personalizado
+@use './main/personalizado';
+
+//Tercer parte del header
+@use './main/info';
+
+//Footer
+
+@use './footer/footer';
+
+
+
+
+
+
+
+/******** tipos de pasteles ********/
+
+//main de los tipos de pasteles
+@use './main/mainTipos/tipos';
+
+//Footer
+@use '././footer/footerTipos';
+
+
+
+
+
+/***********Perzonaliza tu pastel**************/
+
+//Header
+@use './header/headerpersonaliza';
+
+@use './main/mainTipos/crea';
+
+
+
+
+
+
+
+/******* Pago  *******/
+
+@use './header/headerpago.scss';
+
+@use './main/pago/pago.scss'

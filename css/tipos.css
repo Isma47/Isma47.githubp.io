@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-nav {
+  display: flex;
+  align-items: none;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.header-logo__contacto {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 1% 0;
+}
+.header-logo__contacto .logo {
+  color: #ff4d6d;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.header-logo__contacto .header-entrega {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header-logo__contacto .header-entrega span {
+  margin-left: 1%;
+}
+.header-logo__contacto .header-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.header-logo__contacto .header-contacto a {
+  display: flex;
+  align-items: center;
+  padding: 3%;
+  font-size: 0.8rem;
+}
+.header-logo__contacto .header-contacto a span {
+  margin-right: 5%;
+}
+
+/***********Segunda parte del header***************/
+.header-nav__search {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #ff4d6d;
+}
+.header-nav__search .header-tipos__sabores {
+  min-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.header-nav__search .header-tipos__sabores a {
+  color: white;
+  transition: all 1s;
+}
+.header-nav__search .header-tipos__sabores a:hover {
+  color: #000000;
+}
+.header-nav__search .header-tipos__sabores .btn-option {
+  color: #000000;
+  transition: all 1s;
+}
+.header-nav__search .header-tipos__sabores .btn-option:hover {
+  color: white;
+}
+.header-nav__search .header-search__buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  min-width: 40%;
+  margin-right: 7%;
+}
+.header-nav__search .header-search__buy .header-search {
+  display: flex;
+  justify-content: space-between;
+  min-width: 90%;
+}
+.header-nav__search .header-search__buy .header-search input {
+  border: transparent;
+  width: 90%;
+  padding: 1.5% 0;
+}
+
+/************ version movil ******************/
+@media screen and (max-width: 600px) {
+  .header-logo__contacto {
+    display: flex;
+    align-items: center;
+    justify-content: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .header-logo__contacto .header-entrega {
+    font-size: 0.7rem;
+  }
+  .header-logo__contacto .header-entrega span {
+    margin: 0;
+  }
+  .header-tipos__sabores {
+    display: flex;
+    align-items: center;
+    justify-content: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .header-tipos__sabores a {
+    font-size: 0.8rem;
+  }
+}
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown .btn-option {
+  background-color: #ff4d6d;
+  border: none;
+  font-size: 1rem;
+  color: white;
+}
+
+.dropdown-div {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  background-color: #ff4d6d;
+}
+.dropdown-div a {
+  display: block;
+  padding: 2%;
+  font-size: 0.8rem;
+}
+
+.dropdown:hover .dropdown-div {
+  display: block;
+}
+
+.main {
+  max-width: 100%;
+}
+
+.main-populares {
+  max-width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13%, 30%));
+  gap: 1rem;
+  grid-template-areas: "title-populares title-populares title-populares" "pastel-1           pastel-2        pastel-3    " "pastel-4           pastel-5        pastel-6    ";
+}
+.main-populares .title-populares {
+  margin-top: 5%;
+  color: #ff4d6d;
+  font-size: 2rem;
+}
+.main-populares .pastel-1 {
+  grid-area: pastel-1;
+}
+.main-populares .pastel-2 {
+  grid-area: pastel-2;
+}
+.main-populares .pastel-3 {
+  grid-area: pastel-3;
+}
+.main-populares .pastel-4 {
+  grid-area: pastel-4;
+}
+.main-populares .pastel-5 {
+  grid-area: pastel-5;
+}
+.main-populares .pastel-6 {
+  grid-area: pastel-6;
+}
+.main-populares .pastel img {
+  width: 100%;
+  transition: all 1s;
+}
+.main-populares .pastel img:hover {
+  transform: scale(1.1, 1.1);
+}
+.main-populares .info {
+  margin-left: 5%;
+}
+.main-populares .info p {
+  font-size: 0.9rem;
+  margin-top: 4%;
+}
+.main-populares .info span {
+  font-weight: 800;
+  color: #ff4d6d;
+}
+.main-populares .info li {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main-populares {
+    display: flex;
+    align-items: center;
+    justify-content: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+.main-creatupastel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  background-color: #ff4d6d;
+}
+.main-creatupastel .info-pastel {
+  margin: 5% 0;
+}
+.main-creatupastel .info-pastel h2, .main-creatupastel .info-pastel p {
+  color: white;
+}
+.main-creatupastel a {
+  border: solid;
+  margin-bottom: 5%;
+  color: #ff4d6d;
+  background-color: #fff0f3;
+  border-radius: 10px;
+  padding: 2%;
+  transition: all 1s;
+}
+.main-creatupastel a:hover {
+  color: #000000;
+  border-radius: 10px;
+}
+.main-creatupastel img {
+  width: 30%;
+  margin-top: 3%;
+}
+
+.info-nuestros__clientes {
+  max-width: 100%;
+  display: flex;
+  align-items: streach;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.idea-main {
+  max-width: 33%;
+  text-align: center;
+}
+.idea-main img {
+  width: 3rem;
+}
+.idea-main h2, .idea-main p {
+  margin-top: 2%;
+  font-weight: bolder;
+}
+.idea-main p {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 600px) {
+  .info-nuestros__clientes {
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5% auto;
+  }
+  .idea-main {
+    max-width: 100%;
+    margin-top: 5%;
+  }
+}
+.footer {
+  background-color: #ff4d6d;
+  margin-top: 1rem;
+  display: flex;
+  align-items: streach;
+  justify-content: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer-final {
+  max-width: 70%;
+  min-height: 10vh;
+  margin-top: 1%;
+}
+.footer-final h3, .footer-final p {
+  margin-top: 1.5%;
+}
+.footer-final h3 {
+  color: white;
+}
+.footer-final p {
+  font-weight: 800;
+}
+.footer-final a {
+  font-size: 0.8rem;
+  color: #000000;
+}
+.footer-final .ayuda {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  max-width: 100%;
+  margin-top: 5%;
+}
+
+.pasteles-grid {
+  max-width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13%, 30%));
+  grid-template-areas: "title-pastel title-pastel title-pastel" "pastel-1       pastel-2     pastel-3  " "pastel-4       pastel-5     pastel-6  ";
+  gap: 2%;
+}
+.pasteles-grid .title-pastel {
+  grid-area: title-pastel;
+  color: #ff4d6d;
+  font-size: 1.96rem;
+  margin-bottom: 2%;
+}
+.pasteles-grid .pastel-1 {
+  grid-area: pastel-1;
+}
+.pasteles-grid .pastel-2 {
+  grid-area: pastel-2;
+}
+.pasteles-grid .pastel-3 {
+  grid-area: pastel-3;
+}
+.pasteles-grid .pastel-4 {
+  grid-area: pastel-4;
+}
+.pasteles-grid .pastel-5 {
+  grid-area: pastel-5;
+}
+.pasteles-grid .pastel {
+  max-width: 100%;
+  text-align: center;
+}
+.pasteles-grid .pastel img {
+  width: 80%;
+  transition: all 2s;
+}
+.pasteles-grid .pastel img:hover {
+  transform: scale(1.1, 1.1);
+}
+.pasteles-grid .info-pastel h2 {
+  margin-top: 1%;
+  color: #ff4d6d;
+  font-size: 1rem;
+  text-align: start;
+}
+.pasteles-grid .info-pastel p, .pasteles-grid .info-pastel li {
+  font-size: 0.8rem;
+}
+.pasteles-grid .info-pastel ul {
+  margin: 0 5% 2% 0;
+  text-align: start;
+}
+.pasteles-grid .info-pastel .precio {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pasteles-grid .info-pastel .precio p {
+  margin: 1.5%;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 600px) {
+  .pasteles-grid {
+    display: flex;
+    align-items: center;
+    justify-content: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .pasteles-grid .info-pastel {
+    display: flex;
+    align-items: center;
+    justify-content: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: auto;
+  }
+  .pasteles-grid .info-pastel .precio {
+    display: flex;
+    min-width: 50%;
+  }
+  .pasteles-grid .title-pastel {
+    font-size: 1rem;
+  }
+}
+.footer-n {
+  background-color: #ff4d6d;
+  margin-top: 3rem;
+  display: flex;
+  align-items: streach;
+  justify-content: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer-final {
+  max-width: 70%;
+  min-height: 10vh;
+  margin-top: 1%;
+}
+.footer-final h3, .footer-final p {
+  margin-top: 1.5%;
+}
+.footer-final h3 {
+  color: white;
+}
+.footer-final p {
+  font-weight: 800;
+}
+.footer-final a {
+  font-size: 0.8rem;
+  color: #000000;
+}
+.footer-final .ayuda {
+  display: flex;
+  flex-direction: column;
+}
+
+/******** tipos de pasteles ********/
+/***********Perzonaliza tu pastel**************/
+
+/*# sourceMappingURL=tipos.css.map */

@@ -1,0 +1,71 @@
+@use './../../abstracs/mixins' as *;
+@use './../../abstracs/variables' as *;
+//Inicia el main
+
+.main {
+    max-width: 100%;
+}
+
+//Inicio del formulario
+.main-formulario {
+    max-width: 30%;
+    margin: auto;
+    @include flex(flex, center, none, column, wrap);
+    
+    .info-pasteles {
+        h1, p{
+            margin-top: 2%;
+            font-weight: 800;
+        }
+        
+        h1 {
+            color: $color-1;
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 4%;
+            font-size: 1rem;
+        }
+    }
+
+    //Formulario
+
+    form {
+        @include flex (flex, none, none, column, nowrap);
+
+        label {
+            color: $color-1;
+            font-size: .8rem;
+            font-weight: 800;
+            margin-top: 2%;
+        }
+
+        .descripcion {
+            min-width: 100%;
+            max-width: 100%;
+        }
+
+        button {
+            margin-top: 4%;
+            background-color: $color-1;
+            padding: 4%;
+            font-size: 1rem;
+            color: $color-text;
+            border-radius: 5px;
+            border: transparent;
+            transition: all 1s ease;
+
+            &:hover {
+                background-color: $color-2;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-formulario {
+        max-width: 100%;
+        margin: auto;
+    }
+}
